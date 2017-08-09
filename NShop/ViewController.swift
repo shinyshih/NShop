@@ -11,13 +11,10 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var item1numTextField: UITextField!
-    @IBOutlet weak var item1NT: UITextField!
     
     @IBOutlet weak var item2numTextField: UITextField!
-    @IBOutlet weak var item2NT: UITextField!
     
     @IBOutlet weak var item3numTextField: UITextField!
-    @IBOutlet weak var item3NT: UITextField!
     
     @IBOutlet weak var totalNTTextField: UITextField!
     
@@ -45,14 +42,19 @@ class ViewController: UIViewController {
         calculate()
     }
     
+    
+    @IBOutlet weak var item1Stepper: UIStepper!
+    @IBOutlet weak var item2Stepper: UIStepper!
+    @IBOutlet weak var item3Stepper: UIStepper!
     @IBAction func deleteAllButton(_ sender: UIButton) {
         item1numTextField.text = "0"
         item2numTextField.text = "0"
         item3numTextField.text = "0"
         totalNTTextField.text = "0"
-        item1 = 0
-        item2 = 0
-        item3 = 0
+        item1Stepper.value = 0
+        item2Stepper.value = 0
+        item3Stepper.value = 0
+        
     }
     
     func calculate() {

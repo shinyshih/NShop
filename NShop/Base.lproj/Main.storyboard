@@ -115,14 +115,6 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nH0-cD-oT4">
-                                <rect key="frame" x="312" y="537" width="37" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.17266367375850677" green="0.17265965044498444" blue="0.1726624071598053" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uHl-XF-HI2">
                                 <rect key="frame" x="312" y="345" width="37" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -190,14 +182,25 @@
                                     <action selector="deleteAllButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AmX-Aa-3n2"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3vl-4U-WKY">
+                                <rect key="frame" x="312" y="538" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1726636738" green="0.1726596504" blue="0.17266240720000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.17266367375850677" green="0.17265965044498444" blue="0.1726624071598053" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="item1Stepper" destination="Qid-sM-D1s" id="SXE-Qz-Ps1"/>
                         <outlet property="item1numTextField" destination="FA3-zY-V65" id="PJQ-7K-cgo"/>
+                        <outlet property="item2Stepper" destination="RXC-Xw-9sm" id="Lpx-1i-aRq"/>
                         <outlet property="item2numTextField" destination="uHl-XF-HI2" id="8G6-jJ-Ewd"/>
-                        <outlet property="item3numTextField" destination="nH0-cD-oT4" id="vA0-O4-PoO"/>
+                        <outlet property="item3Stepper" destination="irc-D6-ZPe" id="7QL-KP-6GG"/>
+                        <outlet property="item3numTextField" destination="3vl-4U-WKY" id="Kfi-Uo-5FJ"/>
                         <outlet property="totalNTTextField" destination="5m4-Wc-hSM" id="eSe-vb-Jr6"/>
                     </connections>
                 </viewController>
